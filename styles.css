@@ -1,0 +1,116 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #559ee2;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-section {
+    width: 30%;
+    max-height: 69vh; /* Limit the height of the product section */
+    overflow-y: auto; /* Add vertical scroll bar */
+}
+
+.add-product-section {
+    width: 30%;
+}
+
+h2 {
+    text-align: center;
+    color: #559ee2;
+}
+
+.product-list {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.product-card {
+    background-color: #559ee2;
+    color: white;
+    border: 2px solid #559ee2;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.product-card img {
+    width: 100%;
+    height: 140px; /* Set a fixed height for images */
+    
+    border-radius: 5px;
+}
+
+.product-card h3,
+.product-card p {
+    margin: 5px 0;
+}
+
+.product-card button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.add-product-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-product-section input,
+.add-product-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 80%;
+}
+
+.add-product-section button[type="submit"] {
+    background-color: #559ee2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-product-section button[type="reset"] {
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #559ee2;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

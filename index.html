@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>❤️❤️❤️ AluraGeek</h1>
+    </header>
+    <main>
+        <section class="product-section">
+            <h2>MIS PRODUCTOS:</h2>
+            <div id="product-list" class="product-list">
+                <!-- Sample products -->
+                <div class="product-card">
+                    <img src="imagenes/mando_play.jpeg" alt="Mando Ps4">
+                    <h3>Mando Ps4</h3>
+                    <p>$90,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/gameboy.jpeg" alt="Game Boy Classic">
+                    <h3>Game Boy Classic</h3>
+                    <p>$60,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/xbox.jpeg" alt="xbox">
+                    <h3>Xbox 360</h3>
+                    <p>$800,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/super_nintendo.jpeg" alt="Super Nintendo">
+                    <h3>Super Nintendo</h3>
+                    <p>$100,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/ps4.jpeg" alt="Consolo Ps4">
+                    <h3>Consola Ps4</h3>
+                    <p>$1500,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/ps5.jpeg" alt="Consolo Ps5">
+                    <h3>Consola Ps5</h3>
+                    <p>$1800,00</p>
+                    <button onclick="this.parentElement.remove()">🗑️</button>
+                </div>
+                <!-- Add more sample products as needed -->
+            </div>
+        </section>
+        <section class="add-product-section">
+            <h2>AGREGAR PRODUCTO:</h2>
+            <form id="add-product-form">
+                <input type="text" id="product-name" placeholder="nombre..." required>
+                <input type="text" id="product-price" placeholder="precio..." required inputmode="decimal" pattern="^\d+(\.\d{1,2})?$">
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>❤️❤️❤️ AluraGeek</p>
+        <p>DESARROLLADO POR EVELYN SAYHURI FLORES SEVERINO</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
